@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script>document.documentElement.classList.add('js');</script>
+  <title>Farid — Informatics Student</title>
+  <meta name="description" content="Farid's personal developer portfolio. Informatics student focused on software development, web technologies, and continuous learning." />
+
+  <!-- ================================================
+       FONTS — Google Fonts
+  ================================================ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- ================================================
+       DEVICONS — Technology logos
+  ================================================ -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+
+  <!-- ================================================
+       BACKGROUND DECORATIONS
+  ================================================ -->
+  <div class="bg-decoration" aria-hidden="true">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <svg width="700" height="700" viewBox="0 0 700 700" fill="none" style="top:-100px;right:-120px;">
+      <circle cx="350" cy="350" r="349.5" stroke="white" stroke-width="0.5"/>
+      <circle cx="350" cy="350" r="249.5" stroke="white" stroke-width="0.5"/>
+      <circle cx="350" cy="350" r="149.5" stroke="white" stroke-width="0.5"/>
+      <line x1="0" y1="350" x2="700" y2="350" stroke="white" stroke-width="0.5"/>
+      <line x1="350" y1="0" x2="350" y2="700" stroke="white" stroke-width="0.5"/>
+    </svg>
+  </div>
+
+  <!-- ================================================
+       NAVIGATION
+  ================================================ -->
+  <header role="banner">
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+      <a class="nav-logo" href="#hero" aria-label="Farid — Back to top">
+        <div class="nav-logo-mark" aria-hidden="true">F</div>
+        <span class="nav-logo-name">Farid</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+      </ul>
+
+      <div class="nav-controls">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" title="Switch theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn-contact-nav">Contact Me</a>
+        <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false" aria-controls="navMobile">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile menu -->
+    <div class="nav-mobile" id="navMobile" role="menu" aria-label="Mobile navigation">
+      <a href="#about" role="menuitem">About Me</a>
+      <a href="#skills" role="menuitem">Skills</a>
+      <a href="#projects" role="menuitem">Projects</a>
+      <a href="#education" role="menuitem">Education</a>
+      <div class="nav-mobile-footer">
+        <span style="font-size:0.78rem;color:var(--text-muted);">Theme</span>
+        <button class="theme-toggle" id="themeToggleMobile" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+        <a href="#contact" class="btn-contact-nav">Contact Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================================================
+         HERO SECTION
+    ================================================ -->
+    <section id="hero" aria-label="Introduction" data-reveal-once>
+      <div class="container">
+        <div class="hero-inner">
+
+          <!-- LEFT -->
+          <div class="hero-left">
+            <div class="hero-meta reveal">
+              <span class="hero-meta-badge">ACTIVE · LEARNING · BUILDING</span>
+            </div>
+
+            <h1 class="hero-headline reveal reveal-delay-1">
+              BUILDING IDEAS INTO<br />
+              <span class="accent-word">DIGITAL</span><br />
+              SOLUTIONS
+            </h1>
+
+            <p class="hero-description reveal reveal-delay-2">
+              I'm an Informatics student focused on software development, web technologies, and continuous learning. I enjoy turning ideas into practical digital solutions while steadily expanding my understanding of the IT field.
+            </p>
+
+            <!-- Status Panel -->
+            <div class="hero-status-panel reveal reveal-delay-2">
+              <div class="status-item">
+                <div class="status-item-label">Currently</div>
+                <div class="status-item-content">
+                  <strong>Building Projects</strong>
+                  Practical web &amp; software applications
+                </div>
+              </div>
+              <div class="status-item">
+                <div class="status-item-label">Learning</div>
+                <div class="status-item-content">
+                  <strong>Core Stack</strong>
+                  Software Dev · Backend · Databases
+                </div>
+              </div>
+              <div class="status-item">
+                <div class="status-item-label">Exploring</div>
+                <div class="status-item-content">
+                  <strong>New Concepts</strong>
+                  Web Tech · Systems · IT Fundamentals
+                </div>
+              </div>
+              <div class="status-item">
+                <div class="status-item-label">Status</div>
+                <div class="status-item-content">
+                  <span class="status-badge">ACTIVE</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="hero-buttons reveal reveal-delay-3">
+              <!--
+                IMPORTANT: Replace RESUME_URL with the actual path or URL to your resume PDF.
+                Example: href="assets/Farid_Resume.pdf"
+              -->
+              <a href="RESUME_URL" class="btn-primary" download aria-label="Download Resume">
+                <span class="btn-icon"><i class="fa-solid fa-download"></i></span> DOWNLOAD RESUME
+              </a>
+              <!--
+                IMPORTANT: Replace GITHUB_URL with your GitHub profile URL.
+                Example: href="https://github.com/yourusername"
+              -->
+              <a href="https://github.com/Faridausss" class="btn-secondary" target="_blank" rel="noopener noreferrer" aria-label="View GitHub Profile">
+                <span class="btn-icon"><i class="fa-brands fa-github"></i></span> VIEW GITHUB
+              </a>
+            </div>
+          </div>
+
+          <!-- RIGHT — Profile Frame -->
+          <div class="hero-right reveal reveal-delay-2">
+            <!--
+              IMPORTANT: To add your actual profile photo:
+              1. Add your image file to the project folder (e.g., assets/profile.jpg)
+              2. Add this CSS to the <style> block or a separate stylesheet:
+                 .profile-img-area {
+                   background-image: url('assets/profile.jpg');
+                   background-size: cover;
+                   background-position: center top;
+                 }
+              3. Remove or hide the .profile-img-icon and .profile-img-label elements.
+            -->
+            <div class="profile-frame" role="img" aria-label="Farid's profile photo placeholder">
+              <div class="frame-corner tl" aria-hidden="true"></div>
+              <div class="frame-corner tr" aria-hidden="true"></div>
+              <div class="frame-corner bl" aria-hidden="true"></div>
+              <div class="frame-corner br" aria-hidden="true"></div>
+
+              <div class="profile-img-area">
+                <img
+                  src="img/pp aja.jpeg"
+                  alt="Farid's profile photo"
+                />
+              </div>
+              <div class="frame-meta-bar" aria-hidden="true">
+                <span>IMG_SPEC_V.2026</span>
+                <span class="fmb-id">ID: FARID_DEV</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <span><i class="fa-solid fa-angles-down"></i></span>
+        <div class="hero-scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         ABOUT ME SECTION
+    ================================================ -->
+    <section id="about" aria-label="About Me">
+      <div class="container">
+        <div class="about-inner">
+
+          <div class="about-left">
+            <div class="reveal">
+              <div class="section-label">About Me</div>
+              <h2 class="section-heading">Curious Student<br />Practical Builder</h2>
+              <div class="section-divider"></div>
+            </div>
+
+            <!--
+              IMPORTANT: Replace the avatar placeholder below with your actual photo.
+              Set background-image on .about-avatar in the style block.
+            -->
+            <div class="about-profile-card reveal reveal-left reveal-delay-1">
+              <div class="about-avatar">
+                <img
+                  src="img/pp aja.jpeg"
+                  alt="Muhammad Farid Firdaus"/>
+              </div>
+              <div class="about-profile-info">
+                <div class="about-profile-name">Muhammad Farid Firdaus</div>
+                <div class="about-profile-role">Informatics Student · Aspiring Software Developer</div>
+              </div>
+            </div>
+
+            <div class="about-body reveal reveal-delay-2">
+              <p>
+                I'm an Informatics student with a strong interest in <strong>software development</strong> and technology. My journey in IT is driven by curiosity, consistency, and the desire to understand how things work — not just on the surface, but at the level of systems, logic, and structure.
+              </p>
+              <p>
+                I enjoy building practical projects while strengthening my foundations in <strong>programming</strong>, <strong>web development</strong>, <strong>databases</strong>, and <strong>computer systems</strong>. Alongside my technical focus, I also have an interest in design and digital editing — though software development and IT remain my primary direction.
+              </p>
+              <p>
+                I believe growth comes through hands-on experience. Each project I work on is an opportunity to learn something new, solve a real problem, and become a stronger developer over time.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-right">
+            <div class="reveal reveal-delay-3">
+              <div class="section-label" style="margin-top:12px;">Approach</div>
+              <p class="section-sub" style="margin-top:0;">
+                A few qualities that define how I work and learn.
+              </p>
+            </div>
+
+            <div class="about-traits" data-stagger="80" data-stagger-base="380">
+              <div class="trait-item reveal reveal-sm">
+                <div class="trait-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="trait-label">Curious</div>
+                <div class="trait-desc">I dig into how things actually work, not just what they produce.</div>
+              </div>
+              <div class="trait-item reveal reveal-sm">
+                <div class="trait-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <div class="trait-label">Practical</div>
+                <div class="trait-desc">I learn best by building — turning concepts into working code.</div>
+              </div>
+              <div class="trait-item reveal reveal-sm">
+                <div class="trait-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                <div class="trait-label">Structured</div>
+                <div class="trait-desc">Clean logic and organized thinking are the foundation of my approach.</div>
+              </div>
+              <div class="trait-item reveal reveal-sm">
+                <div class="trait-icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                <div class="trait-label">Growth-Oriented</div>
+                <div class="trait-desc">Every project, challenge, and mistake is a step toward being better.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         SKILLS SECTION
+    ================================================ -->
+    <section id="skills" aria-label="Skills">
+      <div class="container">
+
+        <div class="skills-header">
+          <div class="reveal">
+            <div class="section-label">Skills</div>
+            <h2 class="section-heading">Tools &amp;<br />Technologies</h2>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <p class="section-sub">
+              Tools and technologies I use while learning, building, and improving my development skills.
+            </p>
+          </div>
+        </div>
+
+        <!-- Technology Logo Grid -->
+        <div class="tech-grid" data-stagger="45" role="list" aria-label="Technology stack">
+
+          <div class="tech-item reveal reveal-sm" role="listitem" title="Java">
+            <i class="devicon-java-plain colored" aria-hidden="true"></i>
+            <span>Java</span>
+          </div>
+          <div class="tech-item reveal reveal-sm" role="listitem" title="Python">
+            <i class="devicon-python-plain colored" aria-hidden="true"></i>
+            <span>Python</span>
+          </div>
+          <div class="tech-item reveal reveal-sm" role="listitem" title="HTML5">
+            <i class="devicon-html5-plain colored" aria-hidden="true"></i>
+            <span>HTML</span>
+          </div>
+          <div class="tech-item reveal reveal-sm" role="listitem" title="CSS3">
+            <i class="devicon-css3-plain colored" aria-hidden="true"></i>
+            <span>CSS</span>
+          </div>
+          <div class="tech-item reveal reveal-sm" role="listitem" title="JavaScript">
+            <i class="devicon-javascript-plain colored" aria-hidden="true"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-item reveal reveal-sm" role="listitem" title="PHP">
+            <i class="devicon-php-plain colored" aria-hidden="true"></i>
+            <span>PHP</span>
+          </div>
+          <div class="tech-item reveal reveal-sm" role="listitem" title="MySQL">
+            <i class="devicon-mysql-plain colored" aria-hidden="true"></i>
+            <span>MySQL</span>
+          </div>
+          <div class="tech-item reveal reveal-sm" role="listitem" title="Git">
+            <i class="devicon-git-plain colored" aria-hidden="true"></i>
+            <span>Git</span>
+          </div>
+          <div class="tech-item reveal reveal-sm" role="listitem" title="GitHub">
+            <i class="devicon-github-original" aria-hidden="true" style="color:var(--text-primary)"></i>
+            <span>GitHub</span>
+          </div>
+          <div class="tech-item reveal reveal-sm" role="listitem" title="VS Code">
+            <i class="devicon-vscode-plain colored" aria-hidden="true"></i>
+            <span>VS Code</span>
+          </div>
+          <div class="tech-item reveal reveal-sm" role="listitem" title="Figma">
+            <i class="devicon-figma-plain colored" aria-hidden="true"></i>
+            <span>Figma</span>
+          </div>
+          <div class="tech-item reveal reveal-sm" role="listitem" title="Canva" style="position:relative;">
+            <svg width="28" height="28" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="40" cy="40" r="40" fill="#7D2AE8"/>
+              <ellipse cx="40" cy="40" rx="18" ry="26" fill="#fff" fill-opacity="0.95"/>
+              <ellipse cx="40" cy="40" rx="9" ry="15" fill="#7D2AE8"/>
+              <ellipse cx="40" cy="32" rx="9" ry="9" fill="#00C4CC"/>
+            </svg>
+            <span>Canva</span>
+          </div>
+
+        </div>
+
+        <!-- Skill Cards (wide horizontal) -->
+        <div class="skills-cards" data-stagger="120">
+
+          <div class="skill-card reveal reveal-lg">
+            <div class="skill-card-num"><i class="fa-solid fa-eye"></i></div>
+            <div class="skill-card-category">Primary Focus</div>
+            <div class="skill-card-title">Software Development</div>
+            <div class="skill-card-desc">
+              Building practical applications while strengthening foundations in programming, web development, databases, and system logic. Each project reinforces real understanding of how software is structured and built.
+            </div>
+            <div class="skill-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Python</span>
+              <span class="tag">PHP</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">MySQL</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal reveal-lg">
+            <div class="skill-card-num"><i class="fa-solid fa-microscope"></i></div>
+            <div class="skill-card-category">Supporting Tools</div>
+            <div class="skill-card-title">Development &amp; Creative Tools</div>
+            <div class="skill-card-desc">
+              Using development and creative tools to support coding workflow, version control, project organization, interface design, and digital content creation alongside core development work.
+            </div>
+            <div class="skill-tags">
+              <span class="tag">Git</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">VS Code</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Canva</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================================================
+         PROJECTS SECTION — HORIZONTAL SCROLL SHOWCASE
+    ================================================ -->
+    <section id="projects" class="projects-section" aria-label="Projects">
+
+      <!-- Section header (above the pinned area) -->
+      <div class="container">
+        <div class="projects-header">
+          <div class="reveal">
+            <div class="section-label">Selected Projects</div>
+            <h2 class="section-heading">THINGS I'VE<br />BUILT</h2>
+          </div>
+          <div class="reveal reveal-delay-1">
+            <p class="section-sub">
+              A selection of projects built to apply software development concepts through practical implementation, problem-solving, and continuous experimentation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Horizontal scroll wrapper — provides scroll height for pinning -->
+      <div class="projects-scroll-wrapper" id="projectsScrollWrapper">
+
+        <!-- Sticky viewport — pins to screen during horizontal scroll -->
+        <div class="projects-sticky" id="projectsSticky">
+
+          <!-- Progress indicator -->
+          <div class="projects-progress" id="projectsProgress" aria-label="Project navigation">
+            <span class="pp-current" id="ppCurrent">01</span>
+            <div class="pp-track">
+              <div class="pp-dot pp-dot--active" data-idx="0"></div>
+              <div class="pp-line"><div class="pp-line-fill" id="ppLineFill"></div></div>
+              <div class="pp-dot" data-idx="1"></div>
+              <div class="pp-line"><div class="pp-line-fill"></div></div>
+              <div class="pp-dot" data-idx="2"></div>
+            </div>
+            <span class="pp-total">03</span>
+          </div>
+
+          <!-- Horizontal track containing project cards -->
+          <div class="projects-track" id="projectsTrack">
+
+            <div class="projects-list">
+
+          <!-- ─── PROJECT 01: CafeHub ─────────────────────── -->
+          <article class="cs-card reveal" data-project="0" aria-label="Project: CafeHub">
+
+            <!-- Metadata bar (full-width) -->
+            <div class="cs-header">
+              <div class="cs-header-left">
+                <span class="cs-num">PROJECT 01</span>
+                <span class="cs-sep">//</span>
+                <span class="cs-name-short">CAFEHUB</span>
+              </div>
+              <div class="cs-header-right">
+                <span class="cs-meta-item">
+                  <span class="cs-meta-key">TYPE</span>
+                  <span class="cs-meta-val">WEB / DATABASE</span>
+                </span>
+                <span class="cs-divider-pipe" aria-hidden="true">|</span>
+                <span class="cs-meta-item">
+                  <span class="cs-meta-key">YEAR</span>
+                  <span class="cs-meta-val">2026</span>
+                </span>
+                <span class="cs-divider-pipe" aria-hidden="true">|</span>
+                <span class="cs-meta-item">
+                  <span class="cs-meta-val cs-meta-tag">ACADEMIC PROJECT</span>
+                </span>
+              </div>
+            </div>
+
+            <!-- Card body: Image LEFT / Content RIGHT -->
+            <div class="cs-body cs-body--normal">
+
+              <!--
+                IMPORTANT: Replace PROJECT_01_IMAGE.
+                To use a real screenshot:
+                  1. Save to project folder (e.g. img/cafehub.jpg)
+                  2. Add to .cs-img-area:  style="background-image:url('img/cafehub.jpg');"
+                  3. Remove the inner .cs-img-placeholder block.
+              -->
+              <div class="cs-img-area" role="img" aria-label="CafeHub screenshot">
+                <div class="cs-img-corner cs-img-corner--tl" aria-hidden="true"></div>
+                <div class="cs-img-corner cs-img-corner--tr" aria-hidden="true"></div>
+                <div class="cs-img-corner cs-img-corner--bl" aria-hidden="true"></div>
+                <div class="cs-img-corner cs-img-corner--br" aria-hidden="true"></div>
+                <img src="img/cafehub.png" alt="CafeHub screenshot" />
+              </div>
+
+              <div class="cs-content">
+                <div class="cs-category">WEB DEVELOPMENT · DATABASE</div>
+                <h3 class="cs-title">CafeHub</h3>
+                <p class="cs-desc">
+                  A database-driven cafe management web application developed with PHP Native, MySQL, and Bootstrap. The project focuses on practical web development, relational database management, and SQL-based data operations.
+                </p>
+
+                <div class="cs-meta-blocks">
+                  <div class="cs-meta-block">
+                    <div class="cs-mb-label">ROLE</div>
+                    <div class="cs-mb-val">Developer</div>
+                  </div>
+                  <div class="cs-meta-block">
+                    <div class="cs-mb-label">FOCUS</div>
+                    <div class="cs-mb-val">Web &amp; Database</div>
+                  </div>
+                  <div class="cs-meta-block">
+                    <div class="cs-mb-label">STACK</div>
+                    <div class="cs-mb-val">PHP · MySQL · Bootstrap</div>
+                  </div>
+                </div>
+
+                <div class="cs-highlights">
+                  <div class="cs-highlights-label">[ DEVELOPMENT HIGHLIGHTS ]</div>
+                  <ul class="cs-highlights-list">
+                    <li>Implemented CRUD operations for core application data</li>
+                    <li>Designed and managed relational database structures</li>
+                    <li>Applied SQL operations including JOIN, GROUP BY, COUNT, and SUM</li>
+                  </ul>
+                </div>
+
+                <div class="cs-tech">
+                  <span class="tag">PHP</span>
+                  <span class="tag">MySQL</span>
+                  <span class="tag">Bootstrap</span>
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                </div>
+
+                <div class="cs-actions">
+                  <!--
+                    IMPORTANT: Replace PROJECT_01_GITHUB with actual repo URL.
+                    Example: href="https://github.com/yourusername/cafehub"
+                  -->
+                  <!-- <a href="PROJECT_01_GITHUB" class="cs-action-btn cs-action-btn--primary" target="_blank" rel="noopener noreferrer" aria-label="View CafeHub on GitHub">
+                    <span class="cs-btn-icon" aria-hidden="true"><i class="fa-brands fa-github"></i></span>
+                    VIEW GITHUB
+                    <span class="cs-btn-arrow" aria-hidden="true">→</span>
+                  </a> -->
+                  <!--
+                    IMPORTANT: Replace PROJECT_01_DEMO with demo URL.
+                    Remove this button if no live demo exists.
+                  -->
+                  <!-- <a href="PROJECT_01_DEMO" class="cs-action-btn cs-action-btn--ghost" target="_blank" rel="noopener noreferrer" aria-label="View CafeHub live demo">
+                    <span class="cs-btn-icon" aria-hidden="true">↗</span>
+                    LIVE DEMO -->
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- ─── PROJECT 02: Student Grade System ─────────────────────── -->
+          <article class="cs-card reveal" data-project="1" aria-label="Project: Student Grade Data System">
+
+            <!-- Metadata bar (full-width) -->
+            <div class="cs-header">
+              <div class="cs-header-left">
+                <span class="cs-num">PROJECT 02</span>
+                <span class="cs-sep">//</span>
+                <span class="cs-name-short">STUDENT GRADE SYSTEM</span>
+              </div>
+              <div class="cs-header-right">
+                <span class="cs-meta-item">
+                  <span class="cs-meta-key">TYPE</span>
+                  <span class="cs-meta-val">JAVA / DATA STRUCTURES</span>
+                </span>
+                <span class="cs-divider-pipe" aria-hidden="true">|</span>
+                <span class="cs-meta-item">
+                  <span class="cs-meta-key">YEAR</span>
+                  <span class="cs-meta-val">2025</span>
+                </span>
+                <span class="cs-divider-pipe" aria-hidden="true">|</span>
+                <span class="cs-meta-item">
+                  <span class="cs-meta-val cs-meta-tag">ACADEMIC PROJECT</span>
+                </span>
+              </div>
+            </div>
+
+            <!-- Card body: Image LEFT / Content RIGHT -->
+            <div class="cs-body cs-body--normal">
+
+              <!--
+                IMPORTANT: Replace PROJECT_02_IMAGE.
+                To use a real screenshot:
+                  1. Save to project folder (e.g. img/student-grade-system.jpg)
+                  2. Add to .cs-img-area:  style="background-image:url('img/student-grade-system.jpg');"
+                  3. Remove the inner .cs-img-placeholder block.
+              -->
+              <div class="cs-img-area" role="img" aria-label="Student Grade System screenshot placeholder">
+                <div class="cs-img-corner cs-img-corner--tl" aria-hidden="true"></div>
+                <div class="cs-img-corner cs-img-corner--tr" aria-hidden="true"></div>
+                <div class="cs-img-corner cs-img-corner--bl" aria-hidden="true"></div>
+                <div class="cs-img-corner cs-img-corner--br" aria-hidden="true"></div>
+                <div class="cs-img-placeholder">
+                  <div class="cs-img-num" aria-hidden="true">02</div>
+                  <div class="cs-img-label">PROJECT_02_IMAGE</div>
+                  <div class="cs-img-sublabel">GRADE SYSTEM · JAVA APPLICATION</div>
+                </div>
+              </div>
+
+              <div class="cs-content">
+                <div class="cs-category">JAVA · DATA STRUCTURES</div>
+                <h3 class="cs-title">Student Grade Data System</h3>
+                <p class="cs-desc">
+                  A Java-based application for managing and searching student grade data, developed to strengthen understanding of arrays, indexing, iteration, and fundamental searching algorithms.
+                </p>
+
+                <div class="cs-meta-blocks">
+                  <div class="cs-meta-block">
+                    <div class="cs-mb-label">ROLE</div>
+                    <div class="cs-mb-val">Developer</div>
+                  </div>
+                  <div class="cs-meta-block">
+                    <div class="cs-mb-label">FOCUS</div>
+                    <div class="cs-mb-val">Data Structures</div>
+                  </div>
+                  <div class="cs-meta-block">
+                    <div class="cs-mb-label">STACK</div>
+                    <div class="cs-mb-val">Java · Arrays</div>
+                  </div>
+                </div>
+
+                <div class="cs-highlights">
+                  <div class="cs-highlights-label">[ DEVELOPMENT HIGHLIGHTS ]</div>
+                  <ul class="cs-highlights-list">
+                    <li>Managed student grade data using Java arrays</li>
+                    <li>Implemented Sequential Search and Binary Search</li>
+                    <li>Applied indexing and iteration to structured data operations</li>
+                  </ul>
+                </div>
+
+                <div class="cs-tech">
+                  <span class="tag">Java</span>
+                  <span class="tag">Arrays</span>
+                  <span class="tag">Sequential Search</span>
+                  <span class="tag">Binary Search</span>
+                </div>
+
+                <div class="cs-actions">
+                  <!--
+                    IMPORTANT: Replace PROJECT_02_GITHUB with actual repo URL.
+                    Example: href="https://github.com/yourusername/student-grade-system"
+                  -->
+                  <!-- <a href="PROJECT_02_GITHUB" class="cs-action-btn cs-action-btn--primary" target="_blank" rel="noopener noreferrer" aria-label="View Student Grade System on GitHub">
+                    <span class="cs-btn-icon" aria-hidden="true"><i class="fa-brands fa-github"></i></span>
+                    VIEW GITHUB
+                    <span class="cs-btn-arrow" aria-hidden="true">→</span>
+                  </a> -->
+                  <!--
+                    IMPORTANT: Replace PROJECT_02_DEMO with demo URL.
+                    Remove this button if no live demo exists.
+                  -->
+                  <!-- <a href="PROJECT_02_DEMO" class="cs-action-btn cs-action-btn--ghost" target="_blank" rel="noopener noreferrer" aria-label="View Student Grade System live demo">
+                    <span class="cs-btn-icon" aria-hidden="true">↗</span>
+                    LIVE DEMO -->
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+          <!-- ─── PROJECT 03: Search & Sort Complexity Study ── -->
+          <article class="cs-card reveal" data-project="2" aria-label="Project: Search and Sort Complexity Study">
+
+            <div class="cs-header">
+              <div class="cs-header-left">
+                <span class="cs-num">PROJECT 03</span>
+                <span class="cs-sep">//</span>
+                <span class="cs-name-short">ALGORITHM COMPLEXITY STUDY</span>
+              </div>
+              <div class="cs-header-right">
+                <span class="cs-meta-item">
+                  <span class="cs-meta-key">TYPE</span>
+                  <span class="cs-meta-val">JAVA / ALGORITHM ANALYSIS</span>
+                </span>
+                <span class="cs-divider-pipe" aria-hidden="true">|</span>
+                <span class="cs-meta-item">
+                  <span class="cs-meta-key">YEAR</span>
+                  <span class="cs-meta-val">2026</span>
+                </span>
+                <span class="cs-divider-pipe" aria-hidden="true">|</span>
+                <span class="cs-meta-item">
+                  <span class="cs-meta-val cs-meta-tag">ACADEMIC / EXPERIMENTAL</span>
+                </span>
+              </div>
+            </div>
+
+            <!-- Card body: Image LEFT / Content RIGHT -->
+            <div class="cs-body cs-body--normal">
+
+              <!--
+                IMPORTANT: Replace PROJECT_03_IMAGE.
+                To use a real screenshot:
+                  1. Save to project folder (e.g. img/algo-study.jpg)
+                  2. Add to .cs-img-area:  style="background-image:url('img/algo-study.jpg');"
+                  3. Remove the inner .cs-img-placeholder block.
+              -->
+              <div class="cs-img-area" role="img" aria-label="Algorithm Complexity Study screenshot placeholder">
+                <div class="cs-img-corner cs-img-corner--tl" aria-hidden="true"></div>
+                <div class="cs-img-corner cs-img-corner--tr" aria-hidden="true"></div>
+                <div class="cs-img-corner cs-img-corner--bl" aria-hidden="true"></div>
+                <div class="cs-img-corner cs-img-corner--br" aria-hidden="true"></div>
+                <div class="cs-img-placeholder">
+                  <div class="cs-img-num" aria-hidden="true">03</div>
+                  <div class="cs-img-label">PROJECT_03_IMAGE</div>
+                  <div class="cs-img-sublabel">ALGO STUDY · JAVA ANALYSIS</div>
+                </div>
+              </div>
+
+              <div class="cs-content">
+                <div class="cs-category">JAVA · ALGORITHM ANALYSIS</div>
+                <h3 class="cs-title">Search &amp; Sort<br />Complexity Study</h3>
+                <p class="cs-desc">
+                  A comparative Java study examining searching and sorting algorithms through practical implementation and experimental analysis of time and space complexity.
+                </p>
+
+                <div class="cs-meta-blocks">
+                  <div class="cs-meta-block">
+                    <div class="cs-mb-label">ROLE</div>
+                    <div class="cs-mb-val">Research &amp; Development</div>
+                  </div>
+                  <div class="cs-meta-block">
+                    <div class="cs-mb-label">FOCUS</div>
+                    <div class="cs-mb-val">Algorithm Analysis</div>
+                  </div>
+                  <div class="cs-meta-block">
+                    <div class="cs-mb-label">STACK</div>
+                    <div class="cs-mb-val">Java · Algorithms</div>
+                  </div>
+                </div>
+
+                <div class="cs-highlights">
+                  <div class="cs-highlights-label">[ DEVELOPMENT HIGHLIGHTS ]</div>
+                  <ul class="cs-highlights-list">
+                    <li>Compared Linear Search and Binary Search</li>
+                    <li>Implemented Bubble Sort, Merge Sort, and Quick Sort</li>
+                    <li>Evaluated experimental time and space complexity</li>
+                  </ul>
+                </div>
+
+                <div class="cs-tech">
+                  <span class="tag">Java</span>
+                  <span class="tag">Algorithms</span>
+                  <span class="tag">Linear Search</span>
+                  <span class="tag">Binary Search</span>
+                  <span class="tag">Bubble Sort</span>
+                  <span class="tag">Merge Sort</span>
+                  <span class="tag">Quick Sort</span>
+                </div>
+
+                <div class="cs-actions">
+                  <!--
+                    IMPORTANT: Replace PROJECT_03_GITHUB with actual repo URL.
+                  -->
+                  <!-- <a href="PROJECT_03_GITHUB" class="cs-action-btn cs-action-btn--primary" target="_blank" rel="noopener noreferrer" aria-label="View Algorithm Complexity Study on GitHub">
+                    <span class="cs-btn-icon" aria-hidden="true"><i class="fa-brands fa-github"></i></span>
+                    VIEW GITHUB
+                    <span class="cs-btn-arrow" aria-hidden="true">→</span> -->
+                  </a>
+                </div>
+              </div>
+
+            </div>
+          </article>
+
+        </div><!-- /.projects-list -->
+
+          </div><!-- /.projects-track -->
+
+        </div><!-- /.projects-sticky -->
+
+      </div><!-- /.projects-scroll-wrapper -->
+
+    </section>
+
+    <!-- ================================================
+         EDUCATION SECTION
+    ================================================ -->
+    <section id="education" aria-label="Education">
+      <div class="container">
+        <div class="education-inner">
+
+          <div class="reveal">
+            <div class="section-label">Education</div>
+            <h2 class="section-heading">Academic<br />Background</h2>
+            <div class="section-divider"></div>
+            <p class="section-sub">
+              Building a solid academic foundation in informatics while developing hands-on skills through coursework and personal projects.
+            </p>
+          </div>
+
+          <div>
+            <div class="education-timeline" data-reveal-seq role="list" aria-label="Education timeline">
+
+              <!-- Entry 01 -->
+              <div class="edu-item" role="listitem">
+                <div class="edu-dot" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="edu-content">
+                  <div class="edu-period">2025 — PRESENT</div>
+                  <div class="edu-institution">Universitas Bhinneka PGRI</div>
+                  <div class="edu-degree">Major: Informatics</div>
+                  <div class="edu-focus-label">Focus Areas</div>
+                  <div class="edu-tags">
+                    <span class="tag">Software Development</span>
+                    <span class="tag">Web Development</span>
+                    <span class="tag">Database Systems</span>
+                    <span class="tag">Computer Networks</span>
+                    <span class="tag">Programming Fundamentals</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Entry 02 -->
+              <div class="edu-item" role="listitem">
+                <div class="edu-dot" aria-hidden="true"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="edu-content">
+                  <div class="edu-period">2022 — 2025</div>
+                  <div class="edu-institution">SMKN 3 Boyolangu</div>
+                  <div class="edu-degree" >Major: Electrical Engineering</div>
+                  <div class="edu-focus-label">Focus Areas</div>
+                  <div class="edu-tags">
+                    <span class="tag">Electrical Installation</span>
+                    <span class="tag">Wiring Systems</span>
+                    <span class="tag">Power Distribution</span>
+                    <span class="tag">Electrical Panel</span>
+                    <span class="tag">Electrical Safety</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================
+         CONTACT SECTION
+    ================================================ -->
+    <section id="contact" aria-label="Contact">
+      <div class="contact-bg-text" aria-hidden="true">CONNECT</div>
+      <div class="container">
+        <div class="contact-inner">
+
+          <div class="reveal">
+            <div class="section-label" style="justify-content:center;">Get In Touch</div>
+            <h2 class="contact-heading">
+              LET'S BUILD<br />
+              <span class="accent-line">SOMETHING USEFUL</span>
+            </h2>
+          </div>
+
+          <p class="contact-sub reveal reveal-delay-1">
+            I'm open to collaboration, development opportunities, interesting projects, and learning from people with more experience. If you have an idea or just want to connect — feel free to reach out.
+          </p>
+
+          <div class="contact-methods" data-stagger="90" data-stagger-base="200">
+
+            <!--
+              IMPORTANT: Replace EMAIL_ADDRESS with your actual email address.
+              Example: href="mailto:farid@example.com"
+            -->
+            <a href="mailto:firdausmfarid18@gmail.com" class="contact-method reveal" aria-label="Send email to Farid">
+              <span class="cm-icon" aria-hidden="true"><i class="fa-regular fa-envelope"></i></span>
+              <div class="cm-label">Email</div>
+              <div class="cm-value">firdausmfarid18@gmail.com</div>
+            </a>
+
+            <!--
+              IMPORTANT: Replace GITHUB_URL with your actual GitHub profile URL.
+              Example: href="https://github.com/yourusername"
+            -->
+            <a href="https://github.com/Faridausss" target="_blank" rel="noopener noreferrer" class="contact-method reveal" aria-label="Visit Farid's GitHub profile">
+              <span class="cm-icon" aria-hidden="true"><i class="fa-brands fa-github"></i></span>
+              <div class="cm-label">GitHub</div>
+              <div class="cm-value">Faridausss</div>
+            </a>
+
+            <!--
+              IMPORTANT: Replace WHATSAPP_NUMBER with your actual WhatsApp number (digits only after the +).
+              Example: href="https://wa.me/628123456789"
+            -->
+            <a href="https://wa.me/6281353845796" target="_blank" rel="noopener noreferrer" class="contact-method reveal" aria-label="Contact Farid on WhatsApp">
+              <span class="cm-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+              <div class="cm-label">WhatsApp</div>
+              <div class="cm-value">+62 813-5384-5796</div>
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================
+       FOOTER
+  ================================================ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div class="footer-name">Farid</div>
+          <div class="footer-role">Informatics Student · Aspiring Software Developer</div>
+        </div>
+        <nav class="footer-links" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="footer-copy">
+          &copy; 2026 Farid. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">↑</button>
+
+  <!-- ================================================
+       JAVASCRIPT
+  ================================================ -->
+    <script src="script.js" defer></script>
+
+</body>
+</html>
